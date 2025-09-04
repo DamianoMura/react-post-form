@@ -7,7 +7,18 @@ function App() {
   
   return (
     <>
-    <h1>app nuova</h1>
+    <header className='p-3 text-center'>
+      <h1> react Post Form</h1>
+    </header>
+    <main>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            
+          </div>
+        </div>
+      </div>
+    </main>
     </>
   )
 }
