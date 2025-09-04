@@ -20,6 +20,9 @@ function App() {
     })
   });
 
+  const handleSubmit = ()=>{
+    console.log("button pressed")
+  };
   return (
     <>
     <header className='p-3 text-center'>
@@ -33,23 +36,24 @@ function App() {
               
                 <div className="d-flex justify-content-between">
                   <div className="form-group mb-2 p-2 w-50">
-                    <label for="author">Author</label>
+                    <label>Author</label>
                     <input type="text" className="form-control" placeholder="Author..."/>
                 </div>
                 <div className="form-group mb-2 p-2 w-50">
-                  <label for="title">Title</label>
-                  <input type="text" className="form-control" id="title" placeholder="Title..."/>
+                  <label >Title</label>
+                  <input type="text" className="form-control" placeholder="Title..."/>
                 </div>
                 </div>
                 <div className="form-group mb-2 p-2">
-                  <label for="title">Message</label>
-                  <input type="text" className="form-control" id="body" placeholder="Write something here..."/>
+                  <label >Message</label>
+                  <input type="text" className="form-control" placeholder="Write something here..."/>
                 </div>
                 <div className="form-group form-check">
-                  <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-                  <label className="form-check-label" for="exampleCheck1">public</label>
+                  <input type="checkbox" className="form-check-input"/>
+                  <label className="form-check-label" >public</label>
                 </div>
-                <button className="btn btn-primary">Submit</button>
+                <button className="btn btn-primary"
+                onClick={handleSubmit}>Submit</button>
               
             </div>
           </div>
