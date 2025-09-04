@@ -4,16 +4,22 @@ import axios from 'axios';
 const endpoint="https://67c5b4f3351c081993fb1ab6.mockapi.io/api/posts";
 
 function App() {
+  const [postList,setPostList]=useState([]);
   const [newPost,setNewPost]= useState({
     id: "",
     author: "",
     public: false,
     title: "",
     body: ""
-  })
+  });
 
   //we need the new id to be generated so we call useEffect straight to get the posts list
-  
+  useEffect(()=>{
+    axios.get(endpoint).then((resp)=>{
+      setPostList(resp.data);
+    })
+  });
+
   return (
     <>
     <header className='p-3 text-center'>
