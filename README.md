@@ -2,7 +2,7 @@
 
 ## Post Form
 
-#repo: react-post-form
+# repo: react-post-form
 
 Oggi creeremo il nostro primo form multifield per inviare dati in POST ad un’API.
 
